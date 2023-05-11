@@ -1,0 +1,23 @@
+.form-div {
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    /* display: table-cell; */
+}
+
+.form-div .form {
+    text-align: left;
+    padding-right: 25px;
+}
+
+@media (max-width: 600px) {
+
+    .form-div {
+        height: auto;
+    }
+
+    .form-div .form {
+        padding-right: 0px;
+    }
+}

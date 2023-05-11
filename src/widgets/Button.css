@@ -1,0 +1,36 @@
+.button {
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available;
+}
+
+.reset-button {
+    width: 100%;
+    padding: 7px 10px;
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
+    transition: 1s;
+}
+
+.reset-button:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+.reset-button:disabled {
+    background-color: hsl(186, 14%, 43%);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .button {
+        position: unset;
+    }
+}

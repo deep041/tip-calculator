@@ -1,38 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
+    height: 100vh;
+    background-color: hsl(185, 41%, 84%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+    margin-top: 20px;
+    height: 8%;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -8%);
+    /* animation-name: logo;
+    animation-duration: 1s; */
+    animation-name: middleBox;
+    animation-duration: 2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.box {
+    /* width: 600px; */
+    /* height: 300px; */
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 25px;
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    animation-name: middleBox;
+    animation-duration: 1s;
+}
+
+@media (max-width: 600px) {
+  .App {
+      height: auto;
+  }
+
+  .box { 
+      grid-template-columns: repeat(1, 1fr);
+      left: auto;
+      top: auto;
+      transform: none;
+      border-radius: 15px;
+      align-content: normal;
+  }
+
+  .logo {
+    position: relative;
+      margin-top: 40px;
+      height: 10%;
+      margin-bottom: 40px;
+      left: auto;
+      top: auto;
+      transform: translate(0, 0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes logo {
+  from {height: 1%;}
+  to {height: 8%;}
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes middleBox {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
