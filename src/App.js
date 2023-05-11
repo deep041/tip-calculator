@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import BillForm from './BillForm';
-import BillValues from './BillValues';
+import BillForm from './components/BillForm';
+import BillValues from './components/BillValues';
 import logo from './images/logo.svg';
 
 
