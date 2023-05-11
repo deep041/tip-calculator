@@ -12,7 +12,9 @@ function BillForm(props) {
     }, [state]);
 
     useEffect(() => {
-        setState({ bill: '', tip: '', person: '' });
+        if (props.reset) {
+            setState({ bill: '', tip: '', person: '' });
+        }
     }, [props.reset]);
 
     function valueChange(type, value) {
@@ -42,7 +44,7 @@ function BillForm(props) {
         <div className='form-div'>
             <div className='form'>
                 <InputText title='Bill' isShowIcon={true} icon='dollarIcon' type='bill' value={state.bill} valueChange={valueChange} isShowError={true} />
-                <Tip title='Select Tip %' tips={props.tips}  value={state.tip} type='tip' valueChange={valueChange} />
+                <Tip title='Select Tip %' tips={props.tips} value={state.tip} type='tip' valueChange={valueChange} reset={props.reset} />
                 <InputText title='Number of People' isShowIcon={true} value={state.person} type='person' valueChange={valueChange} isShowError={true} />
             </div>
         </div>
