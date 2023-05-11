@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './BillForm.css';
-import InputText from './widgets/InputText';
-import Tip from './widgets/Tip';
+import InputText from '../widgets/InputText';
+import Tip from '../widgets/Tip';
 
 function BillForm(props) {
 

@@ -1,5 +1,5 @@
 import './BillValues.css';
-import Button from "./widgets/Button";
+import Button from "../widgets/Button";
 
 function BillValues(props) {
     return(
