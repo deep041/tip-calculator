@@ -15,6 +15,7 @@ function App() {
     function getBill(bill, tip) {
         setState({billPerPerson: bill, tipPerPerson: tip});
         setIsResetDisabled(false);
+        setIsReset(false);
     }
 
     function reset() {

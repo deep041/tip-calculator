@@ -1,6 +1,5 @@
 .input {
     position: relative;
-    /* margin-top: 20px; */
 }
 
 .input span {
@@ -94,7 +93,6 @@ input[type=number] {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-
 
 @keyframes iconAnimation { 
     from { transform: rotate(0deg); } 
