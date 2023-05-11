@@ -1,0 +1,50 @@
+.values-div {
+    width: 50%;
+    display: inline-block;
+    background-color: hsl(183, 100%, 15%);
+    height: 100%;
+    border-radius: 10px;
+    display: table-cell;
+    text-align: left;
+    position: relative;
+}
+
+.values-div .values {
+    padding: 25px;
+}
+
+/* .values-div .tip-person */
+
+.values-div .tip-person.total {
+    margin-top: 20px;
+}
+
+.values-div .tip-person .left {
+    width: 50%;
+    display: inline-block;
+}
+
+.values-div .tip-person .left span {
+    display: block;
+}
+
+.values-div .tip-person .left span.amount {
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+}
+
+.values-div .tip-person .left span.person {
+    color: hsl(184, 14%, 56%);
+    font-size: 10px;
+}
+
+.values-div .tip-person .right {
+    width: 50%;
+    padding: 0px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: values-div;
+    color: hsl(172, 67%, 45%);
+    text-align: right;
+}

@@ -1,0 +1,31 @@
+.tip {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tip .tip-grid {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.tip .tip-grid .tip-div {
+    background-color: hsl(183, 100%, 15%);
+    padding: 5px 7px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tip .tip-grid .tip-div:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.tip span {
+    display: block;
+    font-size: 12px;
+    color: hsl(186, 14%, 43%);
+}
