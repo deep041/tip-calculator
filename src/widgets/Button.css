@@ -21,3 +21,9 @@
 .reset-button:hover {
     background-color: hsl(185, 41%, 84%);
 }
+
+.reset-button:disabled {
+    background-color: hsl(186, 14%, 43%);
+    cursor: not-allowed;
+    pointer-events:none;
+}

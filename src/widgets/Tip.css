@@ -6,7 +6,7 @@
 .tip .tip-grid {
     display: grid;
     align-content: space-evenly;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
     padding: 10px 0px;
 }
@@ -21,11 +21,35 @@
 }
 
 .tip .tip-grid .tip-div:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip .tip-grid .tip-div.selected {
     background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 
 .tip span {
     display: block;
     font-size: 12px;
     color: hsl(186, 14%, 43%);
+}
+
+.tip-div.input {
+    padding: 0px !important;
+    background-color: hsl(0, 0%, 100%) !important;
+}
+
+.tip-div .input-number:focus-visible {
+    outline-color: none;
+}
+
+.tip-div .input-number {
+    width: -webkit-fill-available;
+    margin: 0;
+    padding: 0;
+    height: -webkit-fill-available;
+    border-radius: 5px;
+    outline: none;
 }

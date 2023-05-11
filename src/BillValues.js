@@ -1,7 +1,7 @@
 import './BillValues.css';
 import Button from "./widgets/Button";
 
-function BillValues() {
+function BillValues(props) {
     return(
         <div className='values-div'>
             <div className='values'>
@@ -11,7 +11,7 @@ function BillValues() {
                         <span className='person'>/ person</span>
                     </div>
                     <div className='right'>
-                        $0.00
+                        ${props.tip.toFixed(2)}
                     </div>
                 </div>
 
@@ -21,12 +21,12 @@ function BillValues() {
                         <span className='person'>/ person</span>
                     </div>
                     <div className='right'>
-                        $0.00
+                        ${props.bill.toFixed(2)}
                     </div>
                 </div>
             </div>
 
-            <Button title='RESET' />
+            <Button title='RESET' reset={props.reset} isResetDisabled={props.isResetDisabled} />
         </div>
     );
 }

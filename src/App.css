@@ -25,11 +25,10 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 15px;
     padding: 25px;
-    display: table;
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-
-
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

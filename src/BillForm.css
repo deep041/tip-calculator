@@ -1,9 +1,9 @@
 .form-div {
-    width: 50%;
+    width: 100%;
     display: inline-block;
     height: 100%;
     vertical-align: top;
-    display: table-cell;
+    /* display: table-cell; */
 }
 
 .form-div .form {
