@@ -8,7 +8,7 @@ import logo from './images/logo.svg';
 function App() {
 
     const tips = [5, 10, 15, 25, 50];
-    const [state, setState] = useState({billPerPerson: 0.00, tipPerPerson: 0.00});
+    const [state, setState] = useState({billPerPerson: 0, tipPerPerson: 0});
     const [isReset, setIsReset] = useState(false);
     const [isResetDisabled, setIsResetDisabled] = useState(true);
 
@@ -18,7 +18,7 @@ function App() {
     }
 
     function reset() {
-        setState({billPerPerson: 0.00, tipPerPerson: 0.00});
+        setState({billPerPerson: 0, tipPerPerson: 0});
         setIsReset(true);
         setIsResetDisabled(true);
     }

@@ -42,9 +42,9 @@ function BillForm(props) {
     return(
         <div className='form-div'>
             <div className='form'>
-                <InputText title='Bill' isShowIcon={true} icon='dollarIcon' type='bill' value={state.bill} valueChange={valueChange} />
+                <InputText title='Bill' isShowIcon={true} icon='dollarIcon' type='bill' value={state.bill} valueChange={valueChange} isShowError={true} />
                 <Tip title='Select Tip %' tips={props.tips}  value={state.tip} type='tip' valueChange={valueChange} />
-                <InputText title='Number of People' isShowIcon={true} value={state.person} type='person' valueChange={valueChange} />
+                <InputText title='Number of People' isShowIcon={true} value={state.person} type='person' valueChange={valueChange} isShowError={true} />
             </div>
         </div>
     );

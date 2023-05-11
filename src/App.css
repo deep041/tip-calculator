@@ -12,7 +12,15 @@ body {
 
 .logo {
     margin-top: 20px;
-    width: 5%;
+    height: 8%;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -8%);
+    /* animation-name: logo;
+    animation-duration: 1s; */
+    animation-name: middleBox;
+    animation-duration: 2s;
 }
 
 .box {
@@ -28,14 +36,41 @@ body {
     display: grid;
     align-content: space-evenly;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    animation-name: middleBox;
+    animation-duration: 1s;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+@media (max-width: 600px) {
+  .App {
+      height: auto;
+  }
+
+  .box { 
+      grid-template-columns: repeat(1, 1fr);
+      left: auto;
+      top: auto;
+      transform: none;
+      border-radius: 15px;
+      align-content: normal;
+  }
+
+  .logo {
+    position: relative;
+      margin-top: 40px;
+      height: 10%;
+      margin-bottom: 40px;
+      left: auto;
+      top: auto;
+      transform: translate(0, 0);
+  }
 }
 
-input[type=number] {
-  -moz-appearance: textfield;
+@keyframes logo {
+  from {height: 1%;}
+  to {height: 8%;}
+}
+
+@keyframes middleBox {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

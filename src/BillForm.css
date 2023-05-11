@@ -10,3 +10,14 @@
     text-align: left;
     padding-right: 25px;
 }
+
+@media (max-width: 600px) {
+
+    .form-div {
+        height: auto;
+    }
+
+    .form-div .form {
+        padding-right: 0px;
+    }
+}

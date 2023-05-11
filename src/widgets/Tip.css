@@ -18,6 +18,7 @@
     color: hsl(0, 0%, 100%);
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.7s;
 }
 
 .tip .tip-grid .tip-div:hover {
@@ -52,4 +53,10 @@
     height: -webkit-fill-available;
     border-radius: 5px;
     outline: none;
+}
+
+@media (max-width: 600px) {
+    .tip .tip-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }

@@ -44,7 +44,14 @@
     display: inline-block;
     font-size: 24px;
     font-weight: bold;
-    text-align: values-div;
     color: hsl(172, 67%, 45%);
     text-align: right;
+    vertical-align: top;
+}
+
+@media (max-width: 600px) {
+    .values-div {
+        height: auto;
+        margin-top: 20px;
+    }
 }

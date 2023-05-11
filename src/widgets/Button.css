@@ -16,6 +16,7 @@
     cursor: pointer;
     font-weight: bold;
     color: hsl(183, 100%, 15%);
+    transition: 1s;
 }
 
 .reset-button:hover {
@@ -25,5 +26,11 @@
 .reset-button:disabled {
     background-color: hsl(186, 14%, 43%);
     cursor: not-allowed;
-    pointer-events:none;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .button {
+        position: unset;
+    }
 }
