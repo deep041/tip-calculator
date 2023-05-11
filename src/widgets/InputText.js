@@ -3,7 +3,6 @@ import dollarIcon from '../images/icon-dollar.svg';
 import userIcon from '../images/icon-person.svg';
 
 function InputText(props) {
-    console.log(props.isShowError, props.value)
     return (
         <div className='input'>
             { props.title ? <span className='title'>{props.title}</span> : ''}

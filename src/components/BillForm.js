@@ -38,7 +38,6 @@ function BillForm(props) {
         }
     }
 
-
     return(
         <div className='form-div'>
             <div className='form'>

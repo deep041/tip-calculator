@@ -4,7 +4,6 @@
     background-color: hsl(183, 100%, 15%);
     height: 100%;
     border-radius: 10px;
-    /* display: table-cell; */
     text-align: left;
     position: relative;
 }
@@ -12,8 +11,6 @@
 .values-div .values {
     padding: 25px;
 }
-
-/* .values-div .tip-person */
 
 .values-div .tip-person.total {
     margin-top: 20px;
